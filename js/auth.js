@@ -1,4 +1,3 @@
-console.log("I am a Log IN page");
 
 document.addEventListener('DOMContentLoaded', () => {
     // If already logged in, redirect to main page

@@ -1,5 +1,3 @@
-console.log("We are made it all file link");
-
 
 document.addEventListener('DOMContentLoaded', () => {
     // Auth Check
