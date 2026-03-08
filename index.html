@@ -62,6 +62,35 @@
         </div>
     </main>
 
+    <!-- Modal Layout -->
+    <div id="issueModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2 id="modalTitle">Issue Title</h2>
+            <div class="modal-meta">
+                <span id="modalStatus" class="badge">Status</span>
+                <span class="meta-text">Opened by <strong id="modalAuthor">Author</strong> • <span id="modalDate">Date</span></span>
+            </div>
+            <div id="modalLabels" class="modal-labels">
+                <!-- Labels here -->
+            </div>
+            <p id="modalDescription" class="modal-desc">Description text...</p>
+            <div class="modal-footerinfo">
+                <div class="modal-assignee">
+                    <span>Assignee:</span>
+                    <strong id="modalAssignee">None</strong>
+                </div>
+                <div class="modal-priority">
+                    <span>Priority:</span>
+                    <span id="modalPriorityBadge" class="badge priority-badge">Priority</span>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn-primary" id="modalCloseBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
     <script src="js/script.js"></script>
   </body>
 </html>
