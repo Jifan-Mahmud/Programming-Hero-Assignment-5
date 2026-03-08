@@ -24,6 +24,44 @@
       </div>
     </nav>
 
+    <!-- Main Content  -->
+    <main class="dashboard-container">
+        
+        <!-- Tab Section -->
+        <div class="tabs-container">
+            <button class="tab-btn active" data-tab="all">All</button>
+            <button class="tab-btn" data-tab="open">Open</button>
+            <button class="tab-btn" data-tab="closed">Closed</button>
+        </div>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <div class="stats-left">
+                <div class="stats-icon">
+                    <img src="assets/Aperture.png" alt="Issues Icon" style="width: 24px; height: 24px;">
+                </div>
+                <div class="stats-text">
+                    <h3 id="issueCount">0 Issues</h3>
+                    <p>Track and manage your project issues</p>
+                </div>
+            </div>
+            <div class="stats-right">
+                <span class="marker marker-open">Open</span>
+                <span class="marker marker-closed">Closed</span>
+            </div>
+        </div>
+
+        <!-- Issues Grid -->
+        <div id="loadingSpinner" class="spinner-container" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading issues...</p>
+        </div>
+
+        <div id="issuesGrid" class="issues-grid">
+            <!-- Cards JS -->
+        </div>
+    </main>
+
     <script src="js/script.js"></script>
   </body>
 </html>

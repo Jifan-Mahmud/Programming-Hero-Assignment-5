@@ -207,3 +207,89 @@ body {
   margin: 2rem auto;
   padding: 0 1rem;
 }
+
+
+/* Tabs */
+.tabs-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 8px;
+    width: fit-content;
+    border: 1px solid #d0d7de;
+}
+.tab-btn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #57606a;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+.tab-btn:hover { background-color: #f3f4f6; }
+.tab-btn.active {
+    background-color: #4b00ff;
+    color: white;
+}
+
+/* Toolbar */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #d0d7de;
+    margin-bottom: 1.5rem;
+}
+.stats-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.stats-icon {
+    background-color: #f3f0ff;
+    padding: 0.75rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stats-text h3 { font-size: 1.25rem; margin-bottom: 0.2rem; }
+.stats-text p { font-size: 0.85rem; color: #57606a; }
+
+.stats-right {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.marker {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #24292f;
+}
+.marker::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.marker-open::before { background-color: #2da44e; }
+.marker-closed::before { background-color: #8250df; }
+
+/* Grid */
+.issues-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
